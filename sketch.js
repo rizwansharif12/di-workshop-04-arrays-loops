@@ -1,15 +1,19 @@
 function setup() {
-  createCanvas(400, 400)
+  createCanvas(800, 800)
   background(200)
 }
 
 function draw() {
-  var count = 5
-  var x = 10
-  for(i = 1; i < 5; i < count) {
-    rect(x, 10, 10, 10)
-    x = x + 20
-    i = i + 1
+  var x = 0
+  var y = 0
+  var count = 40
+
+  for(j = 0; j < count; j+1) {
+  for(i = 0; i < count; i+1) {
+  rect(x, y, 10, 10)
+  x = x + 10
+  y = y + 10
+  x = 0 
+  }
   }
 }
- 
